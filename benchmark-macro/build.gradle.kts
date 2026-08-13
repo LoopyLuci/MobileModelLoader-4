@@ -21,8 +21,8 @@ android {
         testInstrumentationRunnerArguments["androidx.benchmark.enabledRules"] = "Macrobenchmark"
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        jvmTarget = 11
     }
 }
 dependencies {

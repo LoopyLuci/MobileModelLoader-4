@@ -21,6 +21,11 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+dependencies {
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+}
+
 android {
     namespace = "dev.luci.mobilemodelloader.skills"
     compileSdk = 35
@@ -36,8 +41,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        jvmTarget = 11
     }
 }
 dependencies {
