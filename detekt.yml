@@ -1,0 +1,41 @@
+build:
+  maxIssues: 0
+  excludeCorrectable: true
+  weights:
+    complexity: 2
+    formatting: 1
+    comments: 1
+
+style:
+  active: true
+  ForbiddenComment:
+    active: true
+    values: [ 'TODO', 'FIXME' ]
+  MagicNumber:
+    active: true
+    ignoreNumbers: ['0', '1', '2', '100', '1000']
+
+complexity:
+  active: true
+  LongMethod:
+    active: true
+    threshold: 60
+  LongParameterList:
+    active: true
+    threshold: 6
+
+performance:
+  active: true
+
+exceptions:
+  active: true
+  TooGenericExceptionCaught:
+    active: true
+    exceptionNames: [ 'Throwable', 'Exception', 'RuntimeException' ]
+
+formatting:
+  active: true
+  ImportOrdering:
+    active: true
+  NoLineBreakBeforeAssignment:
+    active: true

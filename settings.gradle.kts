@@ -1,0 +1,46 @@
+pluginManagement {
+  repositories {
+    google {
+      content {
+        includeGroupByRegex("""com\.android.*""")
+        includeGroupByRegex("""com\.google.*""")
+        includeGroupByRegex("androidx.*")
+      }
+    }
+    mavenCentral()
+    gradlePluginPortal()
+  }
+  resolutionStrategy {
+    eachPlugin {
+      if (requested.id.id == "com.android.application" || requested.id.id == "com.android.library") {
+        useVersion("8.10.0")
+      }
+      if (requested.id.id == "org.jetbrains.kotlin.android" || requested.id.id == "org.jetbrains.kotlin.plugin.compose") {
+        useVersion("2.2.0")
+      }
+    }
+  }
+}
+
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+
+rootProject.name = "MobileModelLoader"
+
+include(":app")
+include(":core")
+include(":domain")
+include(":data")
+include(":runtime")
+include(":modelmanager")
+include(":chat")
+include(":benchmark")
+include(":skills")
+include(":mcp")
+include(":ui-common")

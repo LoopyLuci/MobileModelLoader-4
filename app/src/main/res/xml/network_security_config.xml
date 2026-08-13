@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">huggingface.co</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/huggingface_keystore" />
+        </trust-anchors>
+    </domain-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/local_trust_anchor" />
+        </trust-anchors>
+        <cleartext-traffic permitted="false" />
+    </base-config>
+</network-security-config>

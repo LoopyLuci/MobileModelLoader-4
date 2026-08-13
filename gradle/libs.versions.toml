@@ -1,0 +1,57 @@
+[versions]
+agp = "8.10.0"
+kotlin = "2.2.0"
+ksp = "2.2.0-2.0.1"
+hilt = "2.55"
+composeBom = "2026.08.00"
+compileSdk = "35"
+minSdk = "31"
+targetSdk = "35"
+jvmTarget = "11"
+kotlinxCoroutines = "1.9.0"
+datastore = "1.1.7"
+lifecycle = "2.8.7"
+coreKtx = "1.15.0"
+activityCompose = "1.10.1"
+benchmark = "1.3.3"
+benchmarkMacro = "1.2.4"
+serialization = "1.8.0"
+commonmark = "0.21.0"
+richtext = "0.22.0"
+detekt = "1.23.7"
+ktlint = "12.1.2"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose", name = "compose-ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose", name = "compose-ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose", name = "compose-ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose", name = "compose-material3" }
+androidx-compose-ui-tooling = { group = "androidx.compose", name = "compose-ui-tooling" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-benchmark = { module = "androidx.benchmark:benchmark", version.ref = "benchmark" }
+androidx-benchmark-macro = { module = "androidx.benchmark:benchmark-macro", version.ref = "benchmarkMacro" }
+androidx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+commonmark = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
+richtext = { module = "com.halilibo.compose-richtext:richtext-ui", version.ref = "richtext" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+junit = { module = "junit:junit", version = "4.13.2" }
+androidx-junit = { module = "androidx.test.ext:junit", version = "1.2.1" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version = "3.6.1" }
+
+[plugins]
+android-application = { id = "com.android.application" }
+android-library = { id = "com.android.library" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt-application = { id = "com.google.dagger.hilt.android", version = "2.55" }
