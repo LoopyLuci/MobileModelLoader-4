@@ -46,6 +46,10 @@ android {
 }
 
 dependencies {
+    ksp(libs.hilt.compiler)
+
+    implementation(libs.hilt.android)
+
     api(project(":core"))
     api(platform(libs.androidx.compose.bom))
     api(libs.androidx.compose.ui)
