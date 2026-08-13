@@ -31,8 +31,3 @@ tasks.register("ktlintCheck") {
     group = "verification"
 }
 
-tasks.register("checkAll") {
-    description = "Run all checks: lint, tests, static analysis"
-    group = "verification"
-    dependsOn("detektAll", "ktlintCheck", "test")
-}
