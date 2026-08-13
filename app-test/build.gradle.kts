@@ -24,7 +24,7 @@ android {
     }
 
     kotlin {
-        jvmTarget = 11
+        jvmToolchain(11)
     }
 }
 dependencies {
