@@ -41,6 +41,8 @@ android {
     }
 }
 dependencies {
+    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.android)
     api(project(":domain"))
     api(project(":data"))
     api(project(":core"))
@@ -57,5 +59,3 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
 
-implementation(libs.hilt.android)
-ksp(libs.hilt.compiler)
