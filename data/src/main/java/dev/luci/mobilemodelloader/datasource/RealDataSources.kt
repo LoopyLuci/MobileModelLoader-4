@@ -107,7 +107,7 @@ data class ChatMessageEntity(
 ) {
     fun toDomain() = ChatMessage(
         id = id,
-        role = kotlinx.serialization.json.Json.Default.decodeFromString(dev.luci.mobilemodelloader.domain.model.MessageRole.serializer(), role),
+        role = MessageRole.valueOf(role),
         content = content,
         timestamp = timestamp
     )
