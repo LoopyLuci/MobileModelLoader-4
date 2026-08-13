@@ -1,4 +1,6 @@
 [versions]
+room = "2.6.1"
+roomCompiler = "2.6.1"
 agp = "8.10.0"
 kotlin = "2.2.0"
 ksp = "2.2.0-2.0.2"
@@ -55,3 +57,8 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-application = { id = "com.google.dagger.hilt.android", version = "2.55" }
+
+[libraries]
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }

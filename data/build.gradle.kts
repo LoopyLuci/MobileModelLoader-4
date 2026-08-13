@@ -51,4 +51,7 @@ dependencies {
     api(libs.androidx.datastore.preferences)
     api(libs.kotlinx.coroutines.core)
     api(libs.androidx.lifecycle.runtime.ktx)
+    api(libs.androidx.room.runtime)
+    api(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 }
