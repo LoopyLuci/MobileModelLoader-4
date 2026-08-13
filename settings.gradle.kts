@@ -23,7 +23,7 @@ pluginManagement {
         useVersion("2.55")
       }
       if (requested.id.id == "com.google.devtools.ksp") {
-        useVersion("2.2.0-1.0.22")
+        useVersion("1.0.22")
       }
     }
   }
